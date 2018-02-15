@@ -1,9 +1,119 @@
-body {
-    color: white;
+body, html  {
+    overflow: auto;  
+    height: 100%;
+    width: 100%;
+    background: #f0f8ff;
+    font-family: Raleway,sans-serif;
 }
 
-html {
-    background-color: black;
-    background-size: cover;  
+.navbar{
+    margin: 0px !important;
+}
+
+
+#heroBg {
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    /* height: 100%; 
+    width: 100%; */
+}
+
+#about {
     height: 100%;
 }
+
+.socialGit {
+    font-size: 30px;
+}
+.about-me {
+    background-color: #fefefe;
+    padding: 1rem;
+    border: 1px solid #cacaca;
+    /* margin-top: 50%; */
+  }
+  
+  .about-me .separator-left {
+    text-align: left;
+  }
+  
+  .about-me .separator-left::before, .about-me .separator-left::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  
+  .about-me .separator-left::after {
+    clear: both;
+  }
+  
+  .about-me .separator-left::after {
+    position: relative;
+    width: 5rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 0.3rem auto 0;
+    margin-left: 0;
+  }
+  
+  .about-me .author-title {
+    text-transform: uppercase;
+  }
+  
+  .about-me .author-social {
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .about-me .author-social .fa-stack {
+    display: inline-block;
+  }
+  
+  /* .about-the-author .author-social .fa-stack.facebook {
+    color: #4c70ba;
+  }
+  
+  .about-the-author .author-social .fa-stack.facebook:hover, .about-the-author .author-social .fa-stack.facebook:focus {
+    color: #3b5998;
+  }
+  
+  .about-the-author .author-social .fa-stack.twitter {
+    color: #83c3f3;
+  }
+  
+  .about-the-author .author-social .fa-stack.twitter:hover, .about-the-author .author-social .fa-stack.twitter:focus {
+    color: #55acee;
+  } */
+  
+  .about-me .author-social .fa-stack.linkedin {
+    color: #009ee8;
+  }
+  
+  /* .about-me .author-social .fa-stack.linkedin:hover, .about-me .author-social .fa-stack.linkedin:focus {
+    color: #007bb5;
+  } */
+  
+  .author-image img {
+    border: 1px solid #cacaca;
+    height: 200px;
+    
+  }
+  
+  
+
